@@ -1,0 +1,21 @@
+---
+- name: Harden SSH configuration
+  hosts: all
+  become: true
+  tasks:
+    - name: Disable root login
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^PermitRootLogin'
+        line: 'PermitRootLogin no'
+
+    - name: Enforce public key authentication
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^PasswordAuthentication'
+        line: 'PasswordAuthentication no'
+
+    - name: Restart SSH service
+      service:
+        name: ssh
+        state: restarted
