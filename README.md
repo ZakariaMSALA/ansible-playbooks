@@ -1,41 +1,55 @@
-# ⚙️ Ansible Playbooks
+# ⚙️ Ansible Playbooks 🇬🇧
 
-This repository contains example Ansible playbooks for automating server configuration and application deployment.
+## 📋 Table of Contents
+- [Project Overview](#project-overview)
+- [Playbook Descriptions](#playbook-descriptions)
+- [How to Run](#how-to-run)
+- [Author](#author)
 
-## 📁 Project Structure
+## 📦 Project Overview
+Example playbooks for automating server setup and security.
 
-```
-ansible-playbooks/
-├── playbooks/
-│   ├── setup_webserver.yml
-│   └── harden_ssh.yml
-├── inventory/
-│   └── hosts.ini
-```
+**Stack:**
+- Ansible
 
 ## 🔧 Playbook Descriptions
-
-### ✅ setup_webserver.yml
-Installs and configures Nginx on a remote host.
-
-### 🔒 harden_ssh.yml
-Disables root login and enforces key-based authentication on SSH.
+- **setup_webserver.yml** – Installs Nginx
+- **harden_ssh.yml** – Secures SSH
 
 ## ▶️ How to Run
-
-1. Make sure you have Ansible installed:
-```bash
-ansible --version
-```
-
-2. Update the `inventory/hosts.ini` file with your remote server's IP.
-
-3. Run a playbook:
 ```bash
 ansible-playbook -i inventory/hosts.ini playbooks/setup_webserver.yml
 ```
 
-## 📬 Author
-
+## 💼 Author
 Zakaria Msala – Freelance DevOps Engineer  
+[LinkedIn](https://linkedin.com/in/zakaria-msala)
+
+---
+
+# ⚙️ Playbooks Ansible 🇫🇷
+
+## 📋 Sommaire
+- [Présentation du projet](#présentation-du-projet)
+- [Description des playbooks](#description-des-playbooks)
+- [Exécution](#exécution)
+- [Auteur](#auteur-1)
+
+## 📦 Présentation du projet
+Playbooks d’exemple pour automatiser la configuration et la sécurisation de serveurs.
+
+**Stack :**
+- Ansible
+
+## 🔧 Description des playbooks
+- **setup_webserver.yml** – Installe Nginx
+- **harden_ssh.yml** – Sécurise SSH
+
+## ▶️ Exécution
+```bash
+ansible-playbook -i inventory/hosts.ini playbooks/setup_webserver.yml
+```
+
+## 💼 Auteur
+Zakaria Msala – Ingénieur DevOps Freelance  
 [LinkedIn](https://linkedin.com/in/zakaria-msala)
